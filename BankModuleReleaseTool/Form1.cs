@@ -49,7 +49,8 @@ namespace BankModuleReleaseTool
                 try
                 {
                     PathConfigEntity entity = Tools.ReadXML<PathConfigEntity>(fileName);
-
+                    _resourcePath = entity.ResourcePath;
+                    _releasePath = entity.ReleasePath;
                     _bankList = entity.BankList;
                 }
                 catch (Exception ex)
