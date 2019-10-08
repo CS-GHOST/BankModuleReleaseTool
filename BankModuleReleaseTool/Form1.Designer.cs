@@ -34,6 +34,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtReleasePath = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.lab_Tips = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnRelease
@@ -48,7 +49,7 @@
             // 
             // btnOpenConfigFile
             // 
-            this.btnOpenConfigFile.Location = new System.Drawing.Point(210, 150);
+            this.btnOpenConfigFile.Location = new System.Drawing.Point(198, 150);
             this.btnOpenConfigFile.Name = "btnOpenConfigFile";
             this.btnOpenConfigFile.Size = new System.Drawing.Size(75, 23);
             this.btnOpenConfigFile.TabIndex = 1;
@@ -83,15 +84,24 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(38, 90);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(89, 12);
+            this.label2.Size = new System.Drawing.Size(65, 12);
             this.label2.TabIndex = 3;
-            this.label2.Text = "发布文件目录：";
+            this.label2.Text = "发布目录：";
+            // 
+            // lab_Tips
+            // 
+            this.lab_Tips.AutoSize = true;
+            this.lab_Tips.Location = new System.Drawing.Point(40, 256);
+            this.lab_Tips.Name = "lab_Tips";
+            this.lab_Tips.Size = new System.Drawing.Size(0, 12);
+            this.lab_Tips.TabIndex = 4;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(390, 280);
+            this.Controls.Add(this.lab_Tips);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtReleasePath);
             this.Controls.Add(this.label1);
@@ -114,6 +124,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtReleasePath;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lab_Tips;
     }
 }
 

@@ -12,6 +12,8 @@ namespace BankModuleReleaseTool
     {
         private string resourcePath = string.Empty;
         private string releasePath = string.Empty;
+        private string excludeFolder = string.Empty;
+        private string excludeFile = string.Empty;
         private List<Bank> bankList = new List<Bank>();
 
         /// <summary>
@@ -30,6 +32,24 @@ namespace BankModuleReleaseTool
         {
             get { return releasePath; }
             set { releasePath = value; }
+        }
+
+        /// <summary>
+        /// 过滤文件夹
+        /// </summary>
+        public string ExcludeFolder
+        {
+            get { return excludeFolder; }
+            set { excludeFolder = value; }
+        }
+
+        /// <summary>
+        /// 过滤文件
+        /// </summary>
+        public string ExcludeFile
+        {
+            get { return excludeFile; }
+            set { excludeFile = value; }
         }
 
         [XmlElement("Bank")]
